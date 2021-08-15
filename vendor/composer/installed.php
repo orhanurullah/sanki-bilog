@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '94927ccc0e318aa9c0cded0e136c51de5164a905',
     'name' => 'sankii/bilog',
   ),
   'versions' => 
@@ -737,12 +737,12 @@
     ),
     'sankii/bilog' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '94927ccc0e318aa9c0cded0e136c51de5164a905',
     ),
     'sebastian/cli-parser' => 
     array (

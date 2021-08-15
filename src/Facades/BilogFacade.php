@@ -1,6 +1,6 @@
 <?php
 
-namespace Sankii\Bilog;
+namespace Sankii\Bilog\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

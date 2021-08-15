@@ -5,7 +5,7 @@
         "sankii",
         "bilog"
     ],
-    "homepage": "https://github.com/sankii/bilog",
+    "homepage": "https://github.com/orhanurullah/sanki-bilog",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^8.54"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sankii\\Bilog\\": "src"
+            "Sankii\\Bilog\\": "src/"
         }
     },
     "autoload-dev": {
@@ -44,10 +44,12 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sankii\\Bilog\\BilogServiceProvider"
+                "Sankii\\Bilog\\Providers\\BilogServiceProvider",
+                "Sankii\\Bilog\\Providers\\CalculateServiceProvider"
             ],
             "aliases": {
-                "Bilog": "Sankii\\Bilog\\BilogFacade"
+                "Bilog": "Sankii\\Bilog\\Facades\\BilogFacade",
+                "Calculate": "Sankii\\Bilog\\Facades\\CalculatorFacades"
             }
         }
     }

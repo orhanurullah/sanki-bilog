@@ -1,9 +1,9 @@
 <?php
 
-namespace Sankii\Bilog;
+namespace Sankii\Bilog\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use Sankii\Bilog\Bilog;
 class BilogServiceProvider extends ServiceProvider
 {
     /**
@@ -21,7 +21,7 @@ class BilogServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('bilog.php'),
+                __DIR__ . '/../config/sankii-bilog.php' => config_path('bilog.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +50,7 @@ class BilogServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'bilog');
+        $this->mergeConfigFrom(__DIR__ . '/../config/sankii-bilog.php', 'bilog');
 
         // Register the main class to use with the facade
         $this->app->singleton('bilog', function () {
